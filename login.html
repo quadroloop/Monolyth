@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Monolyth - JS Web Analytics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/monolyth.css"> 
+<link rel="stylesheet" href="./css/animate.css"> 
+<script type="text/javascript" src="./js/init.js"></script>
+</head>
+<body class="logbg">
+<!--webcointainer-->
+<iframe src="" class="webcontainer" id="webcontainer" onload="loadcount++;loadchk();"></iframe>
+<center>
+<img src="./img/monolyth.png" class="hero-logo fadeInUp animated w3-hide-small">
+<img src="./img/monolyth.png" class="hero-mini-logo fadeInUp animated w3-hide-large w3-hide-medium">
+<br>
+<br>
+<!--web link-->
+<input id="weblink" class="w3-input w3-border w3-border-blue w3-round oi fadeInUp animated w3-hide-small" placeholder="Link of your Website..">
+<input id="weblinkmin" class="w3-input w3-border w3-round w3-border-blue oi-mini fadeInUp animated w3-hide-medium w3-hide-large" placeholder="Link of your Website..">
+<br>
+<!--passcode-->
+<div id="passcode" style="display:none">
+<input type="password" id="psw" class="w3-input w3-border w3-round w3-border-green oi fadeInUp animated w3-hide-small" placeholder="Passcode..">
+<input type="password" id="pswmin" class="w3-input w3-border w3-round w3-border-green oi-mini fadeInUp animated w3-hide-medium w3-hide-large" placeholder="Passcode..">
+</div>
+<!--compatibility test-->
+<div class="fadeInUp animated" id="checklink">
+<img src="./img/load.gif" class="loader1">
+<p class="w3-text-orange w3-animate-opacity">Checking Compatibility...</p>
+</div>
+<!--good link-->
+<div class="fadeInUp animated" id="glink">
+<p class="w3-text-green w3-animate-opacity"><i class="fa fa-check-circle w3-animate-zoom"></i> Page is Compatible!</p>
+</div>
+<!--bad link-->
+<div class="fadeInUp animated" id="blink" style="display:none;">
+<p class="w3-text-red w3-animate-opacity"><i class="fa fa-close w3-animate-zoom"></i> Page not is Compatible!</p>
+</div>
+
+
+
+
+
+</center>
+<footer class="fadeInUp animated">
+	<div class="w3-bar w3-center w3-text-white">
+	<a href="" class="w3-btn"><i class="fa fa-github"></i> View on Github</a>
+	<a href="" class="w3-btn"><i class="fa fa-file-code-o"></i> Set Up</a>
+	<a href="https://www.w3schools.com/w3css/" class="w3-btn">Powered by:  <i class="fa fa-css3"></i> W3.css</a>
+	<a href="http://www.chartjs.org/samples/latest/" class="w3-btn"><i class="fa fa-line-chart"></i> Chart.js</a>
+	<a href="https://daneden.github.io/animate.css/" class="w3-btn"><i class="fa fa-share-alt"></i> Animate.css</a>
+	<a href="http://fontawesome.io" class="w3-btn"><i class="fa fa-flag"></i> fontawesome.io</a>
+	</div>
+</footer>
+
+
+</body>
+<script src="./js/login.js"></script>
+</html>

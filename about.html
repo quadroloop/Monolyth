@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monolyth - About Monolyth</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+ <link rel="icon" type="image/png" sizes="16x16" href="./img/monolyth-icon.png">
+  <link rel="stylesheet" href="styles/vendor-2cae343ef1.css">
+
+  <link rel="stylesheet" href="styles/auth-a200a050c1.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+      <link rel="stylesheet" href="./css/animate.css">
+      <!--highlighter.js-->
+      <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+<main class="auth-main">
+  <div class="auth-block" style="margin-top:100px;">
+  <center>
+    <img src="./img/monolyth.png" style="width:250px;">
+    </center>
+    <br>
+    <a href="auth.html" class="auth-link">Free Web Analytics for Single Page Websites.</a>
+      <hr style="height:1px;border:none;color:#fff;background-color:rgba(130, 142, 144, 0.6);" />
+     <center>
+     <button class="btn btn-default btn-auth" onclick="gcode();">Get Tracking Code</button>
+      <button class="btn btn-default btn-auth" onclick="about();">About</button>
+       <button class="btn btn-default btn-auth" onclick="htu();">How to Use</button>
+       <br>
+       <br>
+       <!--about-->
+       <div id="about" class="animated fadeInUp">
+     <img src="./img/screenshot.png" style="width:350px;border-radius:10px;">
+       <br>
+       <br>
+       <p style="color:white">Monolyth is a JS Based Web Analytics Platform. It is free and Opensource!, using Akveo Blur Admin Template. Just input your site URL, a password and get your code, then include it to your website. to learn more, click the "How to use" button. Thats it! no Accounts Necessary.</p>
+      </div>
+      </center>
+      <!--generate code-->
+      <div id="gcode" style="display:none;" class="animated fadeInUp">
+    <form class="form-horizontal" >
+      <div class="form-group">
+        <label for="inputName3" class="col-sm-2 control-label">URL</label>
+
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputName3" placeholder="Your Full Website URL:">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Password</label>
+
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Set your Password">
+        </div>
+      </div>
+      <pre style="height: auto;max-height: 160px;overflow: auto;word-break: normal !important;word-wrap: normal !important;white-space: pre !important;"><code class="javascript" style="font-size:13px;border:0">
+      // Bryce Mercines Monolyth-create.js
+var coapp = "about";
+
+function about() {
+ document.getElementById(coapp).style.display = "none"; 
+ document.getElementById("about").style.display = "block";
+ document.getElementById("gcode").style.display = "none";
+ document.getElementById("htuse").style.display = "none";
+ coapp = "about";
+
+}
+
+function htu() {
+ document.getElementById(coapp).style.display = "none"; 
+ document.getElementById("about").style.display = "none";
+ document.getElementById("gcode").style.display = "none";
+ document.getElementById("htuse").style.display = "block";
+ coapp = "htuse";
+
+}
+
+function gcode() {
+ document.getElementById(coapp).style.display = "none"; 
+ document.getElementById("about").style.display = "none";
+ document.getElementById("gcode").style.display = "block";
+ document.getElementById("htuse").style.display = "none";
+ coapp = "gcode";
+
+}
+      </code></pre>
+      <br>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default btn-auth">Get Tracking Code</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--how to use-->
+  <div id="htuse" style="display:none;" class="w3-animate-opacity">
+  <h4><i class="fa fa-tasks"></i> How to Use:</h4>
+  <br>
+  <p><i class="fa fa-check w3-text-green"></i> Just Watch This Video. to Learn How to Use Monolyth</p><br>
+  <iframe width="460" height="260" src="https://www.youtube.com/embed/YXFFJ9GS-X0" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+</main>
+<a href="https://your-url" class="github-corner w3-hide-small" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+</body>
+<script src="./js/monolyth-create.js"></script>
+</html>
