@@ -1,8 +1,9 @@
 # Monolyth - Web Analytics for single page apps and websites.
-[![TeamCity (simple build status)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg)]()
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
 
  ### Project status:
- > Intial Development Started.
+ > dashboard.html working .
+ > Socket.io working.
 
 ### important links:
 
