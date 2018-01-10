@@ -200,12 +200,17 @@
 															<h1 id="delta">{{ activeUsers }} <i class="pe-7s-users"></i></h1>
 															<h3 class="text-muted">Active Users</h3>
 															<br>
-                              <h1>
-																<tr v-for="(page, count) in pages">
-								                  <td>{{ page }}</td>
-								                  <td>{{ count }}</td>
-								                </tr>
-															</h1>
+                              <div>
+																<div v-for="(page, count) in pages">
+								                  <p>{{ page }}</p>
+								                  <p>{{ count }}</p>
+								                </div>
+																<br>
+																<div v-for="(referringSite, count) in referrers">
+																	<p>{{ referringSite }}</p>
+																	<p>{{ count }}</p>
+																</div>
+															</div>
 
                                 <div class="footer">
                                     <div class="legend">
@@ -307,7 +312,7 @@
 											display: true,
 											scaleLabel: {
 													display: true,
-													labelString: 'Value'
+													labelString: 'Number of Users'
 											}
 									}]
 							}
