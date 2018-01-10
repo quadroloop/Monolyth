@@ -1,3 +1,83 @@
+// Monolyth.js for web analytics with websockets
+
+
+var option_active = "db"; // dashboard is active by defualt...
+var c_screen = "dashboard" // currently open screen
+
+// switched Options
+// db..
+document.getElementById('db').addEventListener('click', function() {
+   document.getElementById(option_active).className = "";
+   document.getElementById(c_screen).style.display = "none";
+  document.getElementById("dashboard").style.display = "block";
+  c_screen = "dashboard";
+   this.className = "active";
+    option_active = this.id;
+});
+
+// user
+document.getElementById('user').addEventListener('click', function() {
+   document.getElementById(option_active).className = "";
+   document.getElementById(c_screen).style.display = "none";
+   document.getElementById("screen2").style.display = "block";
+   c_screen = "screen2";
+   this.className = "active";
+    option_active = this.id;
+});
+
+//table
+document.getElementById('table').addEventListener('click', function() {
+   document.getElementById(option_active).className = "";
+    document.getElementById(c_screen).style.display = "none";
+   document.getElementById("screen3").style.display = "block";
+   c_screen = "screen3";
+   this.className = "active";
+       option_active = this.id;
+});
+
+// typo
+document.getElementById('typo').addEventListener('click', function() {
+   document.getElementById(option_active).className = "";
+    document.getElementById(c_screen).style.display = "none";
+   document.getElementById("screen3").style.display = "block";
+   c_screen = "screen3";
+   this.className = "active";
+    option_active = this.id;
+});
+// icons
+document.getElementById('icons').addEventListener('click', function() {
+   document.getElementById(option_active).className = "";
+    document.getElementById(c_screen).style.display = "none";
+   document.getElementById("screen4").style.display = "block";
+   c_screen = "screen4";
+   this.className = "active";
+    option_active = this.id;
+});
+
+// maps
+document.getElementById('maps').addEventListener('click', function() {
+   document.getElementById(option_active).className = "";
+    document.getElementById(c_screen).style.display = "none";
+   document.getElementById("screen5").style.display = "block";
+   c_screen = "screen5";
+   this.className = "active";
+    option_active = this.id;
+});
+// notifs
+document.getElementById('notifs').addEventListener('click', function() {
+   document.getElementById(option_active).className = "";
+    document.getElementById(c_screen).style.display = "none";
+   document.getElementById("screen6").style.display = "block";
+   c_screen = "screen6";
+   this.className = "active";
+    option_active = this.id;
+});
+
+
+
+
+
+// for live traffic charts
 var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var config = {
     type: 'line',
