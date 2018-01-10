@@ -197,7 +197,7 @@
                                 <p class="category">Current Active users</p>
                             </div>
                             <div id="app" class="content">
-															<h1 class="dash-red">{{ activeUsers }} <i class="pe-7s-users"></i></h1>
+															<h1 id="delta">{{ activeUsers }} <i class="pe-7s-users"></i></h1>
 															<h3 class="text-muted">Active Users</h3>
 															<br>
                               <h1>
@@ -356,7 +356,10 @@
 							config.data.labels.push(month);
 
 							config.data.datasets.forEach(function(dataset) {
-									dataset.data.push(randomScalingFactor());
+								// get delta current users..
+								var current_delta = document.getElementById("delta").innerHTML;
+								var current_users = current_delta.replace(' <i class="pe-7s-users"></i>','');
+									dataset.data.push(Number(current_users)+1);
 							});
 
 							window.myLine.update();
