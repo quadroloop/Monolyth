@@ -35,45 +35,6 @@ document.getElementById('table').addEventListener('click', function() {
        option_active = this.id;
 });
 
-// typo
-document.getElementById('typo').addEventListener('click', function() {
-   document.getElementById(option_active).className = "";
-    document.getElementById(c_screen).style.display = "none";
-   document.getElementById("screen3").style.display = "block";
-   c_screen = "screen3";
-   this.className = "active";
-    option_active = this.id;
-});
-// icons
-document.getElementById('icons').addEventListener('click', function() {
-   document.getElementById(option_active).className = "";
-    document.getElementById(c_screen).style.display = "none";
-   document.getElementById("screen4").style.display = "block";
-   c_screen = "screen4";
-   this.className = "active";
-    option_active = this.id;
-});
-
-// maps
-document.getElementById('maps').addEventListener('click', function() {
-   document.getElementById(option_active).className = "";
-    document.getElementById(c_screen).style.display = "none";
-   document.getElementById("screen5").style.display = "block";
-   c_screen = "screen5";
-   this.className = "active";
-    option_active = this.id;
-});
-// notifs
-document.getElementById('notifs').addEventListener('click', function() {
-   document.getElementById(option_active).className = "";
-    document.getElementById(c_screen).style.display = "none";
-   document.getElementById("screen6").style.display = "block";
-   c_screen = "screen6";
-   this.className = "active";
-    option_active = this.id;
-});
-
-
 
 
 
