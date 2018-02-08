@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public/')));
 //    1. /
 //    2. /about
 //    3. /contact
-app.get(/\/(about|contact)?$/, function(req, res) {
+app.get(/\/(about|contact|doger|Bryce|bob)?$/, function(req, res) {
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 
