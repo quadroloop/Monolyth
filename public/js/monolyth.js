@@ -25,8 +25,8 @@ document.getElementById('user').addEventListener('click', function() {
     option_active = this.id;
 });
 
-//table
-document.getElementById('table').addEventListener('click', function() {
+//update
+document.getElementById('update').addEventListener('click', function() {
    document.getElementById(option_active).className = "";
     document.getElementById(c_screen).style.display = "none";
    document.getElementById("screen3").style.display = "block";
@@ -34,6 +34,20 @@ document.getElementById('table').addEventListener('click', function() {
    this.className = "active";
        option_active = this.id;
 });
+
+//table
+document.getElementById('table').addEventListener('click', function() {
+   document.getElementById(option_active).className = "";
+    document.getElementById(c_screen).style.display = "none";
+   document.getElementById("screen4").style.display = "block";
+   c_screen = "screen4";
+   this.className = "active";
+       option_active = this.id;
+});
+
+
+
+
 
 
 
