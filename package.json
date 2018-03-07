@@ -16,7 +16,10 @@
   "author": "Fady Makram",
   "license": "MIT",
   "dependencies": {
+    "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
+    "express-session": "^1.15.6",
+    "node-session": "^1.2.1",
     "socket.io": "^1.4.5"
   }
 }
