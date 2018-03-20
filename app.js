@@ -5,6 +5,15 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var path = require('path');
 var config = require('./config.js');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+var bodyParser = require('body-parser');
+
+
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json())
+app.use(cookieParser());
+app.use(session({secret: "Shh, its a secret!"}));
 
 // the object that will hold information about the active users currently
 // on the site
@@ -15,6 +24,17 @@ app.set('port', (process.env.PORT || 5000));
 // serve the static assets (js/dashboard.js and css/dashboard.css)
 // from the public/ directory
 app.use(express.static(path.join(__dirname, 'public/')));
+
+app.get('/auth',function(req,res){
+    req.session.auth = "cool";
+    if(req.session.auth){
+    res.sendFile(path.join(__dirname, 'views/dashboard.html'));
+  }
+});
+
+app.get('/', function(req,res){
+    res.sendFile(path.join(__dirname, 'views/login.html'));
+});
 
 // serve the index.html page when someone visits any of the following endpoints:
 //    1. /
