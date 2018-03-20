@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/png" href="./monolyth.PNG">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/w3.css">
 	<title>Monolyth - Web Analytics for sigle page apps and websites</title>
 	<script src="./js/chart.bundle.js"></script>
 	<script src="./js/utils.js"></script>
@@ -195,8 +195,8 @@
                         <div class="card">
 
                             <div class="header w3-indigo">
-                                <h4 class="title"><i class="pe-7s-gleam"></i> <i class="pe-7s-users"></i> Active Users</h4>
-                                <p class="category">Current Active users</p>
+                                <h4 class="title  w3-text-white"><i class="pe-7s-gleam w3-text-amber"></i> <i class="pe-7s-users w3-text-aqua"></i> Active Users</h4>
+                                <p class="category w3-text-amber">Current Active users</p>
                             </div>
                             <div id="app" class="content">
 															<h1 id="delta">{{ activeUsers }} <i class="pe-7s-users"></i></h1>
@@ -233,9 +233,9 @@
                     <div class="col-md-8">
                        <div class="w3-card-4">
                         <div class="card">
-                            <div class="header">
-                                <h4 class="title"><i class="pe-7s-graph1"></i> Network Traffic</h4>
-                                <p class="category">Live network traffic</p>
+                            <div class="header w3-indigo">
+                                <h4 class="title w3-text-white"><i class="pe-7s-graph1 w3-text-aqua"></i> Network Traffic</h4>
+                                <p class="category w3-text-amber">Live network traffic</p>
                             </div>
                             <div class="content">
 															<!--
@@ -263,7 +263,7 @@
                                     </div>
                                     <hr>
                                     <div class="stats text-primary">
-                                        <i class="fa fa-circle text-success"></i><i class="fa fa-history"></i> Data is Real-time
+                                        <i class="fa fa-circle text-success"></i><i class="fa fa-history"></i> Data Updates Real-time
                                     </div>
                                 </div>
                             </div>
@@ -278,7 +278,7 @@
                     <div class="col-md-6">
                        <div class="w3-card-4">
                         <div class="card ">
-                            <div class="header">
+                            <div class="header w3-indigo">
                                 <h4 class="title">Active Apps</h4>
                                 <p class="category">Most diployed appications.</p>
                             </div>
@@ -435,15 +435,38 @@
 				<!--screen 2-->
 				<div id="screen2">
 					 <!--users-->
-                     <h1>Pages are tracked here</h1>
+                     <br>
+                     <br>
+                         <div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
+                            <div>
+                                <h1>list of accessible pages :)</h1>
+                            </div>
+                         </div>
 				</div>
 				<!--screen 3-->
 				<div id="screen3">
-					<h1>Records are update here</h1>
+                  <br>
+                     <br>
+                         <div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
+                            <div>
+                                <h1>Update Current records</h1>
+                            </div>
+                         </div>
 				</div>
 				<!--screen 4-->
 				<div id="screen4">
-					<h1>Tracking codes are generated here</h1>
+                   <br>
+                     <br>
+                         <div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
+                            <div>
+                                <h3><i class="pe-7s-science w3-text-indigo"></i> Generate Tracking code</h3>
+                                <hr class="w3-card-2">
+                                <div class="w3-bar">
+                                    <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:550px !important;" type="text" placeholder="Website URL">
+                                    <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin">Generate!</button>
+                                </div>
+                            </div>
+                         </div>
 				</div>
 				<!--screen 5-->
 				<div id="screen5">
