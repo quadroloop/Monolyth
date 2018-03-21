@@ -439,7 +439,7 @@
                        <br>
                            <div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
                               <div>
-                                  <h3><i class="pe-7s-science w3-text-indigo"></i> Tracked Apps</h3>
+                                  <h3><i class="pe-7s-box2 w3-text-indigo"></i> Applications <span class="w3-text-blue"> | </span><span class="w3-text-indigo w3-medium">https://ghost.io/</span></h3>
                                   <hr class="w3-card-2">
 								  <div class="w3-container">
 
@@ -447,10 +447,11 @@
 									 	 <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:550px !important;" type="text" placeholder="Website URL">
 									 	 <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-plus"></i> Add</button>
 									  </div>
-                                
+
   <ul class="w3-ul w3-margin">
     <li class="w3-bar">
-      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-light-green w3-margin w3-white w3-xlarge w3-right"></i>
+   	 <i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-bars w3-margin w3-text-purple w3-white w3-xlarge w3-right"></i>
       <img src="./assets/img/ghost.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
       <div class="w3-bar-item">
         <span class="w3-large w3-text-indigo">Ghost.io</span><br>
@@ -458,7 +459,8 @@
       </div>
     </li>
     <li class="w3-bar">
-      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-blue w3-margin w3-white w3-xlarge w3-right"></i>
+   	 <i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-bars w3-text-purple w3-margin w3-white w3-xlarge w3-right"></i>
       <img src="./assets/img/rocket.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
       <div class="w3-bar-item">
         <span class="w3-large w3-text-indigo">Launch.io</span><br>
@@ -466,7 +468,8 @@
       </div>
     </li>
     <li class="w3-bar">
-      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-blue w3-margin w3-white w3-xlarge w3-right"></i>
+		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-bars w3-text-purple w3-margin w3-white w3-xlarge w3-right"></i>
       <img src="./assets/img/alien.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
       <div class="w3-bar-item">
         <span class="w3-large w3-text-indigo">Alien.io</span><br>
@@ -484,12 +487,79 @@
   					<br>
   						<div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
   						   <div>
-  							   <h3><i class="pe-7s-science w3-text-indigo"></i> Update Records</h3>
+  							   <h3><i class="pe-7s-news-paper w3-text-indigo"></i> Recorded Data</h3>
   							   <hr class="w3-card-2">
-  							   <div class="w3-bar">
-  								   <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:550px !important;" type="text" placeholder="Website URL">
-  								   <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin">Generate!</button>
-  							   </div>
+							   <style>
+* {
+  box-sizing: border-box;
+}
+
+#search {
+  background-image: url('./assets/img/searchicon.png');
+  background-position: 10px 12px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 2px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#rdata {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#rdata li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#rdata li a:hover:not(.header) {
+  background-color: #eee;
+  transition: 0.3s;
+}
+</style>
+<div class="w3-margin">
+<center>
+    <input type="text" id="search" onkeyup="searchData()" placeholder="Search your App" title="search for your app">
+</center>
+<ul id="rdata">
+  <li><a href="#"><i class="fa fa-cube w3-text-indigo"></i> Ghost.io<span class="w3-text-blue"> | </span><span class="w3-text-grey">https://ghost.io</span><i class="w3-text-purple w3-right fa fa-bars w3-padding"></i></a></li>
+  <li><a href="#"><i class="fa fa-cube w3-text-indigo"></i> Center for Positive Futures<span class="w3-text-blue"> | </span><span class="w3-text-grey">https://centerforpositivefutures.github.io/cpf2/</span><i class="w3-text-purple w3-right fa fa-bars w3-padding"></i></a></li>
+  <li><a href="#"><i class="fa fa-cube w3-text-indigo"></i> Crest<span class="w3-text-blue"> | </span><span class="w3-text-grey">https://quadroloop.github.io/Crest</span><i class="w3-text-purple w3-right fa fa-bars w3-padding"></i></a></li>
+  <li><a href="#"><i class="fa fa-cube w3-text-indigo"></i> Verbose<span class="w3-text-blue"> | </span><span class="w3-text-grey">https://quadroloop.github.io/Verbose</span><i class="w3-text-purple w3-right fa fa-bars w3-padding"></i></a></li>
+
+</ul>
+</div>
+
+<script>
+function searchData() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("rdata");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
   						   </div>
   						</div>
 				</div>
@@ -505,6 +575,9 @@
                                 <div class="w3-bar">
                                     <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:550px !important;" type="text" placeholder="Website URL">
                                     <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin">Generate!</button>
+									<button class="w3-btn w3-purple w3-round w3-bar-item w3-margin">Code Info</button>
+									<button class="w3-btn w3-amber w3-round w3-bar-item w3-margin">Copy to Clip Board</button>
+
                                 </div>
                             </div>
                          </div>
