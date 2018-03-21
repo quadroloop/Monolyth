@@ -5,6 +5,7 @@
 	<link rel="icon" type="image/png" href="./monolyth.PNG">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
 	<title>Monolyth - Web Analytics for sigle page apps and websites</title>
 	<script src="./js/chart.bundle.js"></script>
 	<script src="./js/utils.js"></script>
@@ -228,6 +229,19 @@
                             </div>
                         </div>
                         </div>
+                       <!-- Current app -->
+                       <div class="w3-card-4 w3-container w3-white" style="border-radius:5px;">
+						   <ul class="w3-ul w3-margin">
+   						<li class="w3-bar">
+   						  <!-- <i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-light-green w3-margin w3-white w3-xlarge w3-right"></i> -->
+   						  <img src="./assets/img/ghost.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+   						  <div class="w3-bar-item">
+   							<span class="w3-large w3-text-indigo">Ghost.io</span><br>
+   							<span class="w3-text-grey">https://ghost.io</span>
+   						  </div>
+   						</li>
+                       </div>
+                        <br>
                     </div>
 
                     <div class="col-md-8">
@@ -279,20 +293,45 @@
                        <div class="w3-card-4">
                         <div class="card ">
                             <div class="header w3-indigo">
-                                <h4 class="title w3-text-white">Active Apps</h4>
-                                <p class="category w3-text-amber">Most diployed appications.</p>
+                                <h4 class="title w3-text-white"><i class="pe-7s-gleam w3-text-amber"></i> <i class="pe-7s-box2 w3-text-aqua"></i> Active Apps</h4>
+                                <p class="category w3-text-amber">Most visited Appications.</p>
                             </div>
                             <div class="content">
-                                <div id="chartActivity" class="ct-chart"></div>
-
+                                  <!--apps-->
+								  <ul class="w3-ul w3-margin">
+	  						      <li class="w3-bar">
+	  						  		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-light-green w3-margin w3-white w3-xlarge w3-right"></i>
+	  						        <img src="./assets/img/ghost.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+	  						        <div class="w3-bar-item">
+	  						          <span class="w3-large w3-text-indigo">Ghost.io</span><br>
+	  						          <span class="w3-text-grey">https://ghost.io</span>
+	  						        </div>
+	  						      </li>
+	  						      <li class="w3-bar">
+	  						  		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-blue w3-margin w3-white w3-xlarge w3-right"></i>
+	  						        <img src="./assets/img/rocket.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+	  						        <div class="w3-bar-item">
+	  						          <span class="w3-large w3-text-indigo">Launch.io</span><br>
+	  						          <span class="w3-text-grey">https://get.launch.io</span>
+	  						        </div>
+	  						      </li>
+	  						      <li class="w3-bar">
+	  						  		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-blue w3-margin w3-white w3-xlarge w3-right"></i>
+	  						        <img src="./assets/img/alien.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+	  						        <div class="w3-bar-item">
+	  						          <span class="w3-large w3-text-indigo">Alien.io</span><br>
+	  						          <span class="w3-text-grey">https://alien.io/look/for/us/</span>
+	  						        </div>
+	  						      </li>
+	  						    </ul>
                                 <div class="footer">
                                     <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> Tesla Model S
-                                        <i class="fa fa-circle text-danger"></i> BMW 5 Series
+                                        <i class="fa fa-circle w3-text-light-green"></i> Currently Tracking
+                                        <i class="fa fa-circle w3-text-blue"></i> Idle Apps
                                     </div>
                                     <hr>
-                                    <div class="stats">
-                                        <i class="fa fa-circle text-success"></i><i class="fa fa-check"></i> Data information certified
+                                    <div class="stats text-primary">
+                                        <i class="fa fa-circle text-success"></i><i class="fa fa-check"></i> Data is up to date.
                                     </div>
                                 </div>
                             </div>
@@ -303,9 +342,9 @@
                     <div class="col-md-6">
                        <div class="w3-card-4">
                         <div class="card ">
-                            <div class="header">
-                                <h4 class="title">Tasks</h4>
-                                <p class="category">Backend development</p>
+                            <div class="header w3-indigo">
+                                <h4 class="title w3-text-white"><i class="pe-7s-gleam w3-text-amber"></i> <i class="pe-7s-box2 w3-text-aqua"></i> Site Activity</h4>
+                                <p class="category w3-text-amber">Recent User Activity</p>
                             </div>
                             <div class="content">
                                 <div class="table-full-width">
@@ -420,8 +459,8 @@
 
                                 <div class="footer">
                                     <hr>
-                                    <div class="stats">
-                                        <i class="fa fa-history"></i> Updated 3 minutes ago
+                                    <div class="stats text-primary">
+                                        <i class="fa fa-history text-success"></i> Updated 3 minutes ago
                                     </div>
                                 </div>
                             </div>
@@ -439,7 +478,7 @@
                        <br>
                            <div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
                               <div>
-                                  <h3><i class="pe-7s-box2 w3-text-indigo"></i> Applications <span class="w3-text-blue"> | </span><span class="w3-text-indigo w3-medium">https://ghost.io/</span></h3>
+                                  <h4><i class="pe-7s-box2 w3-text-indigo"></i> Applications <span class="w3-text-blue"> | </span><span class="w3-text-indigo w3-medium">https://ghost.io/</span></h4>
                                   <hr class="w3-card-2">
 								  <div class="w3-container">
 
@@ -487,47 +526,9 @@
   					<br>
   						<div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
   						   <div>
-  							   <h3><i class="pe-7s-news-paper w3-text-indigo"></i> Recorded Data</h3>
+  							   <h4><i class="pe-7s-news-paper w3-text-indigo"></i> Recorded Data</h4>
   							   <hr class="w3-card-2">
-							   <style>
-* {
-  box-sizing: border-box;
-}
 
-#search {
-  background-image: url('./assets/img/searchicon.png');
-  background-position: 10px 12px;
-  border-radius: 10px;
-  background-repeat: no-repeat;
-  width: 50%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 2px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#rdata {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#rdata li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#rdata li a:hover:not(.header) {
-  background-color: #eee;
-  transition: 0.3s;
-}
-</style>
 <div class="w3-margin">
 <center>
     <input type="text" id="search" onkeyup="searchData()" placeholder="Search your App" title="search for your app">
@@ -570,13 +571,13 @@ function searchData() {
                      <br>
                          <div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
                             <div>
-                                <h3><i class="pe-7s-science w3-text-indigo"></i> Generate Tracking code</h3>
+                                <h4><i class="pe-7s-science w3-text-indigo"></i> Generate Tracking code</h4>
                                 <hr class="w3-card-2">
                                 <div class="w3-bar">
-                                    <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:550px !important;" type="text" placeholder="Website URL">
-                                    <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin">Generate!</button>
-									<button class="w3-btn w3-purple w3-round w3-bar-item w3-margin">Code Info</button>
-									<button class="w3-btn w3-amber w3-round w3-bar-item w3-margin">Copy to Clip Board</button>
+                                    <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:450px !important;" type="text" placeholder="Website URL">
+                                    <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-cube"></i> Generate!</button>
+									<button class="w3-btn w3-purple w3-round w3-bar-item w3-margin"><i class="fa fa-terminal"></i> Code Info</button>
+									<button class="w3-btn w3-amber w3-round w3-bar-item w3-margin"><i class="fa fa-copy"></i> Copy to Clip Board</button>
 
                                 </div>
                             </div>
