@@ -37,3 +37,20 @@
   background-color: #eee;
   transition: 0.3s;
 }
+
+#editor {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+#code-loader {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.code_bank {
+  margin: 10px;
+  display: none;
+}

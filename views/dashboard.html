@@ -9,7 +9,7 @@
 	<title>Monolyth - Web Analytics for sigle page apps and websites</title>
 	<script src="./js/chart.bundle.js"></script>
 	<script src="./js/utils.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js"></script>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
@@ -233,7 +233,7 @@
                        <div class="w3-card-4 w3-container w3-white" style="border-radius:5px;">
 						   <ul class="w3-ul w3-margin">
    						<li class="w3-bar">
-   						  <!-- <i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-light-green w3-margin w3-white w3-xlarge w3-right"></i> -->
+   						  <!-- <i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle text-success w3-margin w3-white w3-xlarge w3-right"></i> -->
    						  <img src="./assets/img/ghost.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
    						  <div class="w3-bar-item">
    							<span class="w3-large w3-text-indigo">Ghost.io</span><br>
@@ -305,7 +305,7 @@
                                   <!--apps-->
 								  <ul class="w3-ul w3-margin">
 	  						      <li class="w3-bar">
-	  						  		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-light-green w3-margin w3-white w3-xlarge w3-right"></i>
+	  						  		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle text-success w3-margin w3-white w3-xlarge w3-right"></i>
 	  						        <img src="./assets/img/ghost.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
 	  						        <div class="w3-bar-item">
 	  						          <span class="w3-large w3-text-indigo">Ghost.io</span><br>
@@ -331,7 +331,7 @@
 	  						    </ul>
                                 <div class="footer">
                                     <div class="legend">
-                                        <i class="fa fa-circle w3-text-light-green"></i> Currently Tracking
+                                        <i class="fa fa-circle text-success"></i> Currently Tracking
                                         <i class="fa fa-circle w3-text-blue"></i> Idle Apps
                                     </div>
                                     <hr>
@@ -488,13 +488,14 @@
 								  <div class="w3-container">
 
 									  <div class="w3-bar">
-									 	 <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:550px !important;" type="text" placeholder="Website URL">
+									 	 <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:320px !important;" type="text" placeholder="Website URL">
+										 <input type="password" class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:320px !important;" type="text" placeholder="Passphrase">
 									 	 <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-plus"></i> Add</button>
 									  </div>
 
   <ul class="w3-ul w3-margin">
     <li class="w3-bar">
-		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-light-green w3-margin w3-white w3-xlarge w3-right"></i>
+		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle text-success w3-margin w3-white w3-xlarge w3-right"></i>
    	 <i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-bars w3-margin w3-text-purple w3-white w3-xlarge w3-right"></i>
       <img src="./assets/img/ghost.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
       <div class="w3-bar-item">
@@ -579,12 +580,20 @@ function searchData() {
                                 <h4><i class="pe-7s-science w3-text-indigo"></i> Generate Tracking code</h4>
                                 <hr class="w3-card-2">
                                 <div class="w3-bar">
-                                    <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:450px !important;" type="text" placeholder="Website URL">
+									<input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:320px !important;" type="text" placeholder="Website URL">
+									<input type="password" class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:320px !important;" type="text" placeholder="Passphrase">
                                     <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-cube"></i> Generate!</button>
-									<button class="w3-btn w3-purple w3-round w3-bar-item w3-margin"><i class="fa fa-terminal"></i> Code Info</button>
-									<button class="w3-btn w3-amber w3-round w3-bar-item w3-margin"><i class="fa fa-copy"></i> Copy to Clip Board</button>
+									<button class="w3-btn w3-amber w3-round w3-bar-item w3-margin"><i class="fa fa-eye"></i> Show Password</button>
 
                                 </div>
+								<div id="code-loader">
+                                  <center>
+								      <img src="./assets/img/gen_code.gif" style="margin-top:100px;width:70px;">
+                                  </center>
+								</div>
+                                  <div class="code_bank">
+                                     <div id="editor" class="w3-card-2"></div>
+                                  </div>
                             </div>
                          </div>
 				</div>
@@ -642,6 +651,11 @@ function searchData() {
 
     	});
 	</script>
+	<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/javascript");
+</script>
 	<!--script fot chart and the rest of the ui-->
 	<script src="./js/monolyth.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.17/vue.js"></script>
