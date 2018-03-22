@@ -201,3 +201,14 @@ document.getElementById('removeData').addEventListener('click', function() {
 
     window.myLine.update();
 });
+
+
+// generate code
+function generateCode(url,passphrase){
+    document.getElementById('code-loader').style.display = 'block';
+     $('#code-loader').delay(1000).fadeOut('slow',function(){
+          $(this).remove();
+       document.getElementById('code_bank').style.display = 'block';
+    });
+
+}

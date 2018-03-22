@@ -6,9 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" href="./css/w3.css">
     <link rel="stylesheet" href="./css/dashboard.css">
+	<link rel="stylesheet" href="./css/animate.css">
 	<title>Monolyth - Web Analytics for sigle page apps and websites</title>
 	<script src="./js/chart.bundle.js"></script>
 	<script src="./js/utils.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js"></script>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -582,21 +584,25 @@ function searchData() {
                                 <div class="w3-bar">
 									<input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:320px !important;" type="text" placeholder="Website URL">
 									<input type="password" class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:320px !important;" type="text" placeholder="Passphrase">
-                                    <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-cube"></i> Generate!</button>
+                                    <button onclick="generateCode()" class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-cube"></i> Generate!</button>
 									<button class="w3-btn w3-amber w3-round w3-bar-item w3-margin"><i class="fa fa-eye"></i> Show Password</button>
 
                                 </div>
 								<div id="code-loader">
                                   <center>
-								      <img src="./assets/img/gen_code.gif" style="margin-top:100px;width:70px;">
+								      <img src="./assets/img/gen_code.gif" style="margin-top:120px;width:70px;">
                                   </center>
 								</div>
-                                  <div class="code_bank">
+                                  <div id="code_bank">
                                      <div id="editor" class="w3-card-2"></div>
+									 <button onclick="generateCode()" class="w3-btn w3-indigo w3-round w3-right w3-margin"><i class="fa fa-file"></i> Save File</button>
                                   </div>
                             </div>
                          </div>
 				</div>
+                 <br>
+                 <br>
+                 <br>
 				<!--screen 5-->
 				<div id="screen5">
 					<h1>Screen 5</h1>

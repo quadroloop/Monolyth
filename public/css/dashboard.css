@@ -45,12 +45,13 @@
 }
 
 #code-loader {
+  display: none;
   width: 100%;
   height: 350px;
   border-radius: 10px;
 }
 
-.code_bank {
+#code_bank {
   margin: 10px;
   display: none;
 }
