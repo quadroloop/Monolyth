@@ -86,3 +86,12 @@
     height: 70px;
      box-shadow: 0 0 5px #20F8F8;
 }
+
+
+.app-container {
+  border-radius:10px;margin-left:50px;margin-right:50px; background-color: rgba(0,0,0,0.6);
+}
+
+.bg-blur {
+  background-color: rgba(0,0,0,0.6);
+}

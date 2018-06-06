@@ -38,8 +38,8 @@
 </head>
 <body>
 
-<div class="wrapper">
-    <div class="sidebar" data-image="/assets/img/galaxy.jpg">
+<div class="wrapper" >
+    <div id="sb" class="sidebar" data-image="/assets/img/galaxy.jpg">
 
    
 
@@ -86,10 +86,10 @@
     </div>
 
     <!-- menu button -->
-    <a id="menu"><img src="./img/loading5.gif" style="width: 60px"></a>
+    <a id="menu" class="w3-hide-large w3-hide-medium animated bounceIn"><img src="./img/loading5.gif" style="width: 60px" ></a>
     <div class="main-panel">
         <div class="w3-bar w3-hide-large w3-hide-medium">
-           <img src="monolyth-logo.PNG" class="w3-bar-item" style="width: 200px;" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+           <img src="monolyth-logo.PNG" class="w3-bar-item" style="width: 200px;">
         </div>
    <!--dashboard-screen-->
         <div class="content" id="dashboard">
@@ -179,7 +179,7 @@
   </center>
 	  <br>
 															<!-- chart area-->
-                                <div class="footer">
+                                <div class="footer w3-text-white">
                                     <div class="legend">
                                         <i class="fa fa-circle text-info"></i> Open
                                         <i class="fa fa-circle text-danger"></i> Click
@@ -207,44 +207,26 @@
 					 <!--users-->
 					 <br>
                        <br>
-                           <div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
+                           <div class="w3-container w3-text-white app-container ">
                               <div>
                                   <h4><i class="pe-7s-box2 w3-text-indigo"></i> Applications <span class="w3-text-blue"> | </span><span class="w3-text-indigo w3-medium">https://ghost.io/</span></h4>
                                   <hr class="w3-card-2">
 								  <div class="w3-container">
 
-									  <div class="w3-bar">
-									 	 <input class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:320px !important;" type="text" placeholder="Website URL">
-										 <input type="password" class="w3-input w3-border w3-round w3-bar-item w3-margin w3-hover-pale-green" style="width:320px !important;" type="text" placeholder="Passphrase">
-									 	 <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-plus"></i> Add</button>
-									  </div>
+				  <div class="w3-bar">
+				 	 <input class="w3-input bg-blur w3-border w3-round w3-bar-item w3-margin" style="width: 100%;max-width:320px !important;" type="text" placeholder="Website URL">
+					 <input type="password" class="w3-input w3-border w3-round w3-bar-item w3-margin bg-blur" style="width:100%;max-width:320px !important;" type="text" placeholder="Passphrase">
+				 	 <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-plus"></i> Add</button>
+				  </div>
 
   <ul class="w3-ul w3-margin">
     <li class="w3-bar">
-		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle text-success w3-margin w3-white w3-xlarge w3-right"></i>
-   	 <i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-bars w3-margin w3-text-purple w3-white w3-xlarge w3-right"></i>
-      <img src="./assets/img/ghost.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+		<i onclick="" class="w3-bar-item fa fa-circle text-success w3-margin w3-xlarge w3-right w3-hide-small"></i>
+   	 <i onclick="" class="w3-bar-item fa fa-bars w3-margin w3-text-purple  w3-xlarge w3-right w3-hide-small"></i>
+      <img src="./assets/img/ghost.png" class="w3-bar-item w3-circle" style="width:85px">
       <div class="w3-bar-item">
         <span class="w3-large w3-text-indigo">Ghost.io</span><br>
         <span class="w3-text-grey">https://ghost.io</span>
-      </div>
-    </li>
-    <li class="w3-bar">
-		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-blue w3-margin w3-white w3-xlarge w3-right"></i>
-   	 <i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-bars w3-text-purple w3-margin w3-white w3-xlarge w3-right"></i>
-      <img src="./assets/img/rocket.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-      <div class="w3-bar-item">
-        <span class="w3-large w3-text-indigo">Launch.io</span><br>
-        <span class="w3-text-grey">https://get.launch.io</span>
-      </div>
-    </li>
-    <li class="w3-bar">
-		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-circle w3-text-blue w3-margin w3-white w3-xlarge w3-right"></i>
-		<i onclick="this.parentElement.style.display='none'" class="w3-bar-item fa fa-bars w3-text-purple w3-margin w3-white w3-xlarge w3-right"></i>
-      <img src="./assets/img/alien.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-      <div class="w3-bar-item">
-        <span class="w3-large w3-text-indigo">Alien.io</span><br>
-        <span class="w3-text-grey">https://alien.io/look/for/us/</span>
       </div>
     </li>
   </ul>
@@ -256,7 +238,7 @@
 				<div id="screen3">
 					<br>
   					<br>
-  						<div class="w3-container w3-white w3-card-4" style="border-radius:10px;margin-left:50px;margin-right:50px">
+  						<div class="w3-container w3-text-white app-container">
   						   <div>
   							   <h4><i class="pe-7s-news-paper w3-text-indigo"></i> Recorded Data</h4>
   							   <hr class="w3-card-2">
