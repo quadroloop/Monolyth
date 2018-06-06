@@ -39,14 +39,9 @@
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="black" data-image="assets/img/sidebar-5.jpg">
+    <div class="sidebar" data-image="/assets/img/galaxy.jpg">
 
-    <!--
-
-        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-        Tip 2: you can also add an image using data-image tag
-
-    -->
+   
 
     	<div class="sidebar-wrapper">
             <div class="logo">
@@ -80,25 +75,6 @@
                         <p>Generate code</p>
                     </a>
                 </li>
-              <!--
-                <li id="icons">
-                    <a>
-                        <i class="pe-7s-science"></i>
-                        <p>Generate code</p>
-                    </a>
-                </li>
-                <li id="maps">
-                    <a>
-                        <i class="pe-7s-map-marker"></i>
-                        <p>Maps</p>
-                    </a>
-                </li>
-                <li id="notifs">
-                    <a>
-                        <i class="pe-7s-bell"></i>
-                        <p>Notifications</p>
-                    </a>
-                </li> -->
 				<li class="active-pro">
                     <a href="https://github.com/quadroloop/Monolyth">
                         <i class="fa fa-github"></i>
@@ -109,86 +85,12 @@
     	</div>
     </div>
 
+    <!-- menu button -->
+    <a id="menu"><img src="./img/loading5.gif" style="width: 60px"></a>
     <div class="main-panel">
-       <!--  <nav class="navbar navbar-default navbar-fixed w3-card-2">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand text-primary" href="#"><i class="fa fa-line-chart" style="margin-right:8px;"></i> Dashboard</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-dashboard text-primary"></i>
-								<p class="hidden-lg hidden-md">Dashboard</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-globe text-primary"></i>
-                                    <b class="caret hidden-lg hidden-md"></b>
-									<p class="hidden-lg hidden-md">
-										5 Notifications
-										<b class="caret"></b>
-									</p>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li>
-                        <li>
-                           <a href="">
-                                <i class="fa fa-search text-primary"></i>
-								<p class="hidden-lg hidden-md">Search</p>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                           <a href="">
-                               <p>Account</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <p>
-										Dropdown
-										<b class="caret"></b>
-									</p>
-
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                              </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Log out</p>
-                            </a>
-                        </li>
-						<li class="separator hidden-lg"></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
- -->
+        <div class="w3-bar w3-hide-large w3-hide-medium">
+           <img src="monolyth-logo.PNG" class="w3-bar-item" style="width: 200px;" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
    <!--dashboard-screen-->
         <div class="content" id="dashboard">
             <div class="container-fluid">
@@ -201,7 +103,7 @@
                                 <h4 class="title w3-text-white"><i class="pe-7s-gleam w3-text-amber"></i> <i class="pe-7s-users w3-text-aqua"></i> Active Users</h4>
                                 <p class="category w3-text-amber">Current Active users</p>
                             </div>
-                            <div id="app" class="content">
+                            <div id="app" class="content w3-text-white">
 															<h1 id="delta">{{ activeUsers }} <i class="pe-7s-users"></i></h1>
 															<h3 class="text-muted">Active Users</h3>
 															<br>
@@ -217,7 +119,7 @@
 																</div>
 															</div>
 
-                                <div class="footer">
+                                <div class="footer w3-text-white">
                                     <div class="legend">
                                         <i class="fa fa-circle text-info"></i> Open
                                         <i class="fa fa-circle text-danger"></i> Bounce
@@ -245,14 +147,14 @@
                            </ul>
                            <hr class="w3-card-2">
                            <center>
-                            <p class="text-primary w3-small w3-margin"><i class="fa fa-circle text-success"></i> Current App</p>
+                            <p class="text-primary w3-small"><i class="fa fa-circle text-success"></i> Current App</p>
                            </center>
                            </div>
                        </div>
                         <br>
                     </div>
 
-                    <div class="col-md-8">
+                    <div class="col-md-8 w3-hide-small">
                        <div class="w3-card-4">
                         <div class="card">
                             <div class="header">

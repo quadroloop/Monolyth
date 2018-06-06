@@ -154,12 +154,11 @@ h1 .subtitle {
 /*     General overwrite     */
 body,
 .wrapper {
-    min-height: 100vh;
     position: relative;
 }
 
 body {
-    background: rgba(203, 203, 210, 0.15);
+  background: rgb(8, 22, 68) !important;
 }
 
 a {
@@ -421,21 +420,12 @@ input:focus {
 }
 
 .sidebar:before {
-    opacity: .33;
-    background: #000000;
+    opacity: 0.8;
+    background: black;
 }
 
 .sidebar:after {
-    background: #787878;
-    background: -moz-linear-gradient(top, #787878 0%, #343434 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #787878), color-stop(100%, #343434));
-    background: -webkit-linear-gradient(top, #787878 0%, #343434 100%);
-    background: -o-linear-gradient(top, #787878 0%, #343434 100%);
-    background: -ms-linear-gradient(top, #787878 0%, #343434 100%);
-    background: linear-gradient(to bottom, #787878 0%, #343434 100%);
-    background-size: 150% 150%;
-    z-index: 3;
-    opacity: 1;
+   background-color: black;
 }
 
 .sidebar[data-image]:after, .sidebar.has-image:after {
@@ -454,13 +444,12 @@ input:focus {
 }
 
 .sidebar[data-color="black"]:after {
-    background: rgba(0, 0, 0, 0.91);
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.91) 0%, #4091ff 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.91)), color-stop(100%, #4091ff));
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.91) 0%, #4091ff 100%);
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.91) 0%, #4091ff 100%);
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.91) 0%, #4091ff 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.91) 0%, #4091ff 100%);
+    /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.91) 0%, #4091ff 100%);*/
+    background: linear-gradient(
+         rgba(0,0,0,0.5),
+      rgba(4, 11, 36, 0.92), 
+      rgba(22, 47, 130, 0.5)
+        );
     background-size: 150% 150%;
 }
 
@@ -531,7 +520,6 @@ input:focus {
 .sidebar,
 .main-panel {
     max-height: 100%;
-    height: 100%;
     -webkit-transition-property: top,bottom;
     transition-property: top,bottom;
     -webkit-transition-duration: .2s,.2s;
@@ -2201,7 +2189,7 @@ fieldset[disabled] .btn-neutral.active {
 .card {
     border-radius: 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(63, 63, 68, 0.1);
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.6);
     margin-bottom: 30px;
 }
 
