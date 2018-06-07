@@ -10,10 +10,12 @@
 <body class="api-body">
 	<script src="/socket.io/socket.io.js"></script>
 	<script>
+	    var site = location.href.split('#')[1];
 		var socket = io();
 		var visitorData = {
 			referringSite: document.referrer,
-			page: location.pathname
+			page: site
+
 		}
 		socket.emit('visitor-data', visitorData);
 	</script>

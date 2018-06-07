@@ -212,3 +212,31 @@ function generateCode(url,passphrase){
     });
 
 }
+
+var whitelist = ['fission.com'];
+
+//add tracked site:
+function addApps() {
+    var url = document.getElementById('siteName');
+    var pass = document.getElementById('passphrase');
+    var apps = document.getElementById('app_sites');
+    if(!url.value || !pass.value){
+       alert("error incomplete data provided");
+    }else{
+        if(whitelist.indexOf(url.value) > -1){
+            alert('app is already registered');
+        }else{
+        apps.innerHTML +=
+'<li class="w3-bar animated fadeInDown">'+
+        '<i onclick="" class="w3-bar-item fa fa-circle text-success w3-margin w3-xlarge w3-right w3-hide-small"></i>'+
+     '<i onclick="" class="w3-bar-item fa fa-bars w3-margin w3-text-purple  w3-xlarge w3-right w3-hide-small"></i>'+
+      '<img src="./assets/img/ghost.png" class="w3-bar-item w3-circle" style="width:85px">'+
+      '<div class="w3-bar-item">'+
+        '<span class="w3-large w3-text-indigo">'+url.value+'</span><br>'+
+        '<span class="w3-text-grey">https://'+url.value+'</span>'+
+      '</div>'+
+    '</li>';
+    whitelist.push(url.value);
+}
+ }
+}

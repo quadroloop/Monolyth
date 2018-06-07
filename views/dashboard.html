@@ -214,25 +214,15 @@
 								  <div class="w3-container">
 
 				  <div class="w3-bar">
-				 	 <input class="w3-input bg-blur w3-border w3-round w3-bar-item w3-margin" style="width: 100%;max-width:320px !important;" type="text" placeholder="Website URL">
-					 <input type="password" class="w3-input w3-border w3-round w3-bar-item w3-margin bg-blur" style="width:100%;max-width:320px !important;" type="text" placeholder="Passphrase">
-				 	 <button class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-plus"></i> Add</button>
+				 	 <input id="siteName" class="w3-input bg-blur w3-border w3-round w3-bar-item w3-margin" style="width: 100%;max-width:320px !important;" type="text" placeholder="Website URL">
+					 <input id="passphrase" type="password" class="w3-input w3-border w3-round w3-bar-item w3-margin bg-blur" style="width:100%;max-width:320px !important;" type="text" placeholder="Passphrase">
+				 	 <button onclick="addApps();" class="w3-btn w3-indigo w3-round w3-bar-item w3-margin"><i class="fa fa-plus"></i> Add</button>
 				  </div>
 
-  <ul class="w3-ul w3-margin">
-    <li class="w3-bar">
-		<i onclick="" class="w3-bar-item fa fa-circle text-success w3-margin w3-xlarge w3-right w3-hide-small"></i>
-   	 <i onclick="" class="w3-bar-item fa fa-bars w3-margin w3-text-purple  w3-xlarge w3-right w3-hide-small"></i>
-      <img src="./assets/img/ghost.png" class="w3-bar-item w3-circle" style="width:85px">
-      <div class="w3-bar-item">
-        <span class="w3-large w3-text-indigo">Ghost.io</span><br>
-        <span class="w3-text-grey">https://ghost.io</span>
-      </div>
-    </li>
-  </ul>
+  <ul class="w3-ul w3-margin" id="app_sites"></ul>
 </div>
-                              </div>
-                           </div>
+    </div>
+ </div>
 				</div>
 				<!--screen 3-->
 				<div id="screen3">
