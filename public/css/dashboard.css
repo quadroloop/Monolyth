@@ -95,3 +95,18 @@
 .bg-blur {
   background-color: rgba(0,0,0,0.6);
 }
+
+/*api styling */
+
+.api-logo {
+  max-width: 350px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.api-body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #000 ;
+}
