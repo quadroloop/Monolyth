@@ -15,8 +15,7 @@ app.use(bodyParser.json())
 app.use(cookieParser());
 app.use(session({secret: "Shh, its a secret!"}));
 
-// the object that will hold information about the active users currently
-// on the site
+
 var visitorsData = {};
 
 app.set('port', (process.env.PORT || 5000));
