@@ -33,7 +33,7 @@ app.get('/login', function(req,res){
     res.sendFile(path.join(__dirname, 'views/login.html'));
 });
 
-
+// api
  var route = "/";
 app.get(route, function(req, res) {
   res.sendFile(path.join(__dirname, 'views/index.html'));
