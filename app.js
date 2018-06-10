@@ -21,8 +21,6 @@ var visitorsData = {};
 
 app.set('port', (process.env.PORT || 5000));
 
-// serve the static assets (js/dashboard.js and css/dashboard.css)
-// from the public/ directory
 app.use(express.static(path.join(__dirname, 'public/')));
 
 app.get('/auth',function(req,res){
