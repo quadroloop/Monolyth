@@ -39,7 +39,7 @@ app.get(route, function(req, res) {
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 
-// serve up the dashboard when someone visits /dashboard
+// dashboard
 app.get('/dashboard', function(req, res) {
   res.sendFile(path.join(__dirname, 'views/dashboard.html'));
 });
