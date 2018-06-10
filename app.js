@@ -32,17 +32,12 @@ app.get('/auth',function(req,res){
   }
 });
 
-app.get('/', function(req,res){
+app.get('/login', function(req,res){
     res.sendFile(path.join(__dirname, 'views/login.html'));
 });
 
-// serve the index.html page when someone visits any of the following endpoints:
-//    1. /
-//    2. /about
-//    3. /contact
 
- // saved -- /\/(about|contact|doger|Bryce|bob)?$/
- var route = "/bryce";
+ var route = "/";
 app.get(route, function(req, res) {
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
