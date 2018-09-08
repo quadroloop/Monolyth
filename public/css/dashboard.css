@@ -1,20 +1,10 @@
-/* Dashbaord.css - Bryce Mercines 2017 */
+/* Dashboard.css - Bryce Mercines 2017 */
 
 * {
   box-sizing: border-box;
 }
 
-/*#search {
-  background-image: url('../assets/img/searchicon.png');
-  background-position: 10px 12px;
-  border-radius: 10px;
-  background-repeat: no-repeat;
-  width: 50%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 2px solid #ddd;
-  margin-bottom: 12px;
-}*/
+
 
 #rdata {
   list-style-type: none;
