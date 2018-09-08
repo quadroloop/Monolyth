@@ -1,0 +1,1 @@
+document.getElementById('index').innerHTML ='<style></style><h1>Something new ?</h1>';
