@@ -13,7 +13,9 @@ var vm = new Vue({
       this.pages = data.pages;
       this.referrers = data.referrers;
       this.activeUsers = data.activeUsers;
-      var x = document.getElementById("addData").click(); 
+      document.getElementById("addData").click(); 
+      document.getElementById("randomizeData").click(); 
+
     }.bind(this));
   }
 });
