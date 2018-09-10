@@ -13027,14 +13027,3 @@ Copyright (c) 2015 Daniel Eden
 
 /*# sourceMappingURL=material-dashboard.css.map */
 
-body {
-  background-color: rgba(0,0,0,0.8);
-  width: 100%;
-}
-
-
-.panel {
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    height: 300px;
-}
