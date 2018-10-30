@@ -5,5 +5,3 @@
  ### Project status:
  > Project rebuild ongoing
 
-### important links:
-
