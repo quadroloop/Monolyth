@@ -3,9 +3,7 @@
 > Web Analytics for single page apps and websites.
 
  ### Project status:
- > dashboard.html working .
- > Socket.io working.
+ > Project rebuild ongoing
 
 ### important links:
 
->Check out the full tutorial at [coligo](http://coligo.io/real-time-analytics-with-nodejs-socketio-vuejs/)
