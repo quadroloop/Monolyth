@@ -68,9 +68,10 @@ var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'A
 			}
 		};
 
-		window.onload = function() {
+		function initLineChart() {
 			var ctx = document.getElementById('canvas').getContext('2d');
 			window.myLine = new Chart(ctx, config);
+			myLine.update();
 		};
 
 		// document.getElementById('randomizeData').addEventListener('click', function() {
@@ -157,7 +158,7 @@ var MONTHS1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
 				]
 			}, {
 				label: 'Dataset 2',
-				backgroundColor: 'lime',
+				backgroundColor: 'rgb(255, 205, 86)',
 				borderColor: window.chartColors.blue,
 				borderWidth: 1,
 				data: [
@@ -173,7 +174,7 @@ var MONTHS1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
 
 		};
 
-		window.onload = function() {
+		  function initBarChart() {
 			var ctx1 = document.getElementById('canvas1').getContext('2d');
 			window.myBar = new Chart(ctx1, {
 				type: 'bar',
@@ -251,3 +252,8 @@ var MONTHS1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
 
 		// 	window.myBar.update();
 		// });		
+
+		window.onload = () =>{
+			initBarChart();
+			initLineChart();
+		}
